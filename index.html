@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Replica</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      color: #eaeaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* MAIN CONTAINER */
+    .wrapper {
+      width: 92%;
+      max-width: 1100px;
+      min-height: 600px;
+      background: #000;
+      border-radius: 8px;
+      position: relative;
+      padding: 60px;
+    }
+
+    /* TOP RIGHT NAV */
+    .nav {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    .nav a {
+      color: #7a7a7a;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #ffffff;
+    }
+
+    /* CENTER CONTENT */
+    .content {
+      max-width: 520px;
+    }
+
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+      opacity: 0.9;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 14.5px;
+      line-height: 1.7;
+      color: #a1a1a1;
+      margin-bottom: 18px;
+    }
+
+    .highlight {
+      color: #ffffff;
+    }
+
+    .skills-title {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      font-size: 14px;
+      color: #8c8c8c;
+    }
+
+    .skills span {
+      margin-right: 8px;
+    }
+
+    /* BUTTON */
+    .btn {
+      margin-top: 32px;
+      padding: 12px 26px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      border-radius: 999px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .wrapper {
+        padding: 40px 28px;
+      }
+
+      .nav {
+        right: 24px;
+        top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- NAV -->
+    <div class="nav">
+      <a href="https://www.facebook.com/chirag.acharya.3705/">Facebook</a>
+      <a href="https://github.com/optimusprimemax">GitHub</a>
+      <a href="https://www.instagram.com/biotsavartlawisthebestlawever/">	Instagram</a>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <img src="C:\Users\SWIFT GO\Downloads\Portfolio\1.JPG"
+        alt="Profile"
+        class="avatar"
+      />
+
+      <h1>Hi, I'm Prabhav.</h1>
+
+      <p>
+        Frontend Website Developer who designs and create beautiful and creative
+	websites. Passionate to create them with engineering and design principles.
+        Currently working on Nothing.<br>
+        <!--<span class="highlight">Depremzede ⚡</span>
+      </p>-->
+
+      <div class="skills-title">Top Skills</div>
+      <div class="skills">
+        <span>HTML</span> ·
+        <span>CSS</span> ·
+        <span>JAVASCRIPT</span> ·
+        <span>Web Design</span> ·
+      </div>
+
+     <a class="project-link" href="file:///C:/Users/SWIFT%20GO/Downloads/Portfolio/works.html"> <button class="btn">WORKS</button></a>
+
+    </div>
+
+  </div>
+</body>
+</html>

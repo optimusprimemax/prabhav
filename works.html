@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works — Prabhav Acharya</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 24px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(11,11,11,0.6);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 24px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    /* WORKS */
+    .works {
+      margin-top: 120px;
+    }
+
+    .project {
+      min-height: 100vh;
+      padding: 80px 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .project:nth-child(even) {
+      direction: rtl;
+    }
+
+    .project:nth-child(even) * {
+      direction: ltr;
+    }
+
+    .project-number {
+      font-size: 14px;
+      opacity: 0.4;
+      margin-bottom: 12px;
+    }
+
+    .project-title {
+      font-size: clamp(32px, 5vw, 64px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-desc {
+      font-size: 18px;
+      opacity: 0.7;
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+
+    .project-link {
+      font-size: 14px;
+      letter-spacing: 1px;
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+    .project-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 1px;
+      background: #fff;
+      transition: width 0.3s ease;
+    }
+
+    .project-link:hover::after {
+      width: 100%;
+    }
+
+    /* IMAGE */
+    .project-image {
+      width: 100%;
+      height: 70vh;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .project:hover img {
+      transform: scale(1.05);
+    }
+
+    .project:hover .project-title {
+      transform: translateX(6px);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 60px 48px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.5;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      .project {
+        grid-template-columns: 1fr;
+        padding: 60px 24px;
+      }
+
+      .project:nth-child(even) {
+        direction: ltr;
+      }
+
+      .project-image {
+        height: 40vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+   <a class="project-link" href="C:\Users\SWIFT GO\Downloads\Portfolio\index.html"><div class="logo">PRAV</div></a>
+  <nav>
+    <a href="C:\Users\SWIFT GO\Downloads\Portfolio\index.html">Home</a>
+    <a href="#">Works</a>
+    <a href="C:\Users\SWIFT GO\Downloads\Portfolio\index.html">Contact</a>
+  </nav>
+</header>
+
+<main class="works">
+
+  <!-- 01 -->
+  <section class="project">
+    <div>
+      <div class="project-number">01</div>
+      <h2 class="project-title">Parody Game: Flying Oli</h2>
+      <p class="project-desc">
+        A humorous parody game inspired by classic tap-to-fly mechanics.
+      </p>
+      <a class="project-link" href="https://optimusprimemax.github.io/flappykp/">Play Game →</a>
+    </div>
+    <div class="project-image">
+      <img src="C:\Users\SWIFT GO\Downloads\Portfolio\flying-oli.png" alt="Flying Oli Game">
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section class="project">
+    <div>
+      <div class="project-number">02</div>
+      <h2 class="project-title">Love Calculator</h2>
+      <p class="project-desc">
+        A playful web experiment that turns names into love percentages.
+      </p>
+      <a class="project-link" href="https://optimusprimemax.github.io/LoveCalc">Try It →</a>
+    </div>
+    <div class="project-image">
+      <img src="C:\Users\SWIFT GO\Downloads\Portfolio\love-calculator.png" alt="Love Calculator">
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section class="project">
+    <div>
+      <div class="project-number">03</div>
+      <h2 class="project-title">Memory Vault</h2>
+      <p class="project-desc">
+        A private digital space designed to store memories and moments.
+      </p>
+      <a class="project-link" href="https://optimusprimemax.github.io/Memory_Vault/">View Project →</a>
+    </div>
+    <div class="project-image">
+      <img src="C:\Users\SWIFT GO\Downloads\Portfolio\memory-vault.png" alt="Memory Vault">
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section class="project">
+    <div>
+      <div class="project-number">04</div>
+      <h2 class="project-title">Will You Be My Valentine?</h2>
+      <p class="project-desc">
+        An interactive Valentine experience built to create a surprise moment.
+      </p>
+      <a class="project-link" href="https://optimusprimemax.github.io/valentino">Open Experience →</a>
+    </div>
+    <div class="project-image">
+      <img src="C:\Users\SWIFT GO\Downloads\Portfolio\valentine.png" alt="Valentine Website">
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Prabhav Acharya — Crafted with intention.
+</footer>
+
+</body>
+</html>
